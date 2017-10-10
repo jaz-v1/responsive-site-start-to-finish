@@ -6,5 +6,10 @@
 //2. vendor
 @import "vendors/_normalize";
 // 3. Base styles
+@import "sass/base/_base";
+@import "sass/base/_typography";
 // 4. layout
+@import "sass/layout/_grid";
+@import "sass/layout/_header";
+@import "sass/layout/_hero";
 // 5. components
