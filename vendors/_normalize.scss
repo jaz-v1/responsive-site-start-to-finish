@@ -24,9 +24,7 @@ $legacy_browser_support: false !default;
   */
 
 html {
-    font-family: "Roboto" sans-serif;
-    /* 1 */
-    font-weight: 400;
+    @include font($font-normal);
     line-height: 1.6;
     -ms-text-size-adjust: 100%;
     /* 2 */

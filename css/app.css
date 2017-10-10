@@ -17,8 +17,7 @@
   *  `em` units.
   */
 html {
-  font-family: "Roboto" sans-serif;
-  /* 1 */
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   -ms-text-size-adjust: 100%;
