@@ -380,6 +380,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+body {
+  color: #048ca8; }
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -406,13 +409,21 @@ p:last-child {
 h1 {
   font-size: 2rem;
   font-weight: 300;
-  line-height: 1.15; }
+  line-height: 1.15;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 2px; }
 
 .title-large {
   font-size: 3rem;
   font-weight: 900; }
-  .title-large span {
-    font-weight: 300; }
+
+span {
+  font-weight: 300; }
 
 .text-intro {
   font-size: 1.2rem; }
@@ -443,5 +454,27 @@ h1 {
 
 .hero-img {
   display: none; }
+
+.btn {
+  display: inline-block;
+  padding: .75em 2.5em;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .btn:not(:last-of-type) {
+    margin-bottom: .6em; }
+
+.btn--primary {
+  background: #FF4980;
+  color: white;
+  border: 2px solid #FF4980; }
+  .btn--primary:hover, .btn--primary:focus {
+    background: #fc004c; }
+
+.btn--secondary {
+  border: 2px solid white;
+  color: white; }
+  .btn--secondary:hover, .btn--secondary:focus {
+    background: white;
+    color: #048ca8; }
 
 /*# sourceMappingURL=app.css.map */
