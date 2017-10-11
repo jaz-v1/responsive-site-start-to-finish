@@ -466,8 +466,9 @@ span {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
-  font-size: 1.2rem; }
+  left: 100%;
+  font-size: 1.2rem;
+  overflow: hidden; }
 
 ul {
   display: flex;
