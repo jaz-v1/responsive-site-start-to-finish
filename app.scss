@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 // 1. config files and helpers
-@import "sass/abstracts/_colors";
-@import "sass/abstracts/_type";
-@import "sass/mixin/_mixin";
+@import "sass/abstracts/colors";
+@import "sass/abstracts/type";
+@import "sass/mixin/mixin";
 //2. vendor
-@import "vendors/_normalize";
+@import "vendors/normalize";
 // 3. Base styles
-@import "sass/base/_base";
-@import "sass/base/_typography";
+@import "sass/base/base";
+@import "sass/base/typography";
 // 4. layout
-@import "sass/layout/_grid";
-@import "sass/layout/_header";
-@import "sass/layout/_hero";
-@import "sass/layout/_nav";
+@import "sass/layout/grid";
+@import "sass/layout/header";
+@import "sass/layout/hero";
+@import "sass/layout/nav";
+@import "sass/layout/home_sales-points";
+@import "sass/layout/home_promo";
 // 5. components
-@import "sass/components/_buttons";
+@import "sass/components/buttons";

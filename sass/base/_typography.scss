@@ -24,6 +24,7 @@ h1 {
     font-weight: $font-light;
     line-height: 1.15;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -40,6 +41,24 @@ h2 {
 
 span {
     font-weight: $font-light;
+}
+
+.tittle-box {
+    background: $accent;
+    color: $text-inverse;
+    margin: 0 auto;
+    padding: 1em;
+    transform: translateY(30%);
+    max-width: 90%;
+    @media(min-width: 495px) {
+        transform: translateY(50%);
+    }
+    &+.bg-primary {
+        padding-top: 6em;
+        @media(min-width: 495px) {
+            padding-top: 8em;
+        }
+    }
 }
 
 .text-intro {

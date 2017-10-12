@@ -12,6 +12,7 @@ img {
 
 body {
     color: $text-base;
+    text-align-last: center;
 }
 
 .container {
@@ -24,4 +25,14 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.lg-screen {
+    display: none;
+}
+
+.bg-primary {
+    background: $main;
+    color: $text-inverse;
+    padding: 5em 2.5em;
 }
