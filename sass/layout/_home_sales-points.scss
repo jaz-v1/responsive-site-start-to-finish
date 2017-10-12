@@ -1,13 +1,19 @@
 .sales-points {
-    padding: 10vh 0 0;
+  padding: 10vh 0 0;
 }
 
 .sales-point {
-    margin-bottom: 2.5em;
-    &:first-of-type {
-        margin-top: 1.5em;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
+  margin-bottom: 2.5em;
+  &:first-of-type {
+    margin-top: 1.5em;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.test {
+  .class {
+    margin-bottom: 10px;
+  }
 }
