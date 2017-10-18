@@ -37,14 +37,15 @@ h2 {
 .title-large {
   font-size: 3rem;
   font-weight: $font-black;
-  line-height: 0.9;
+  line-height: 1;
+  text-align: center;
 }
 
 span {
   font-weight: $font-light;
 }
 
-.tittle-box {
+.title-box {
   background: $accent;
   color: $text-inverse;
   margin: 0 auto;
@@ -79,4 +80,10 @@ span {
 
 .text-intro {
   font-size: 1.2rem;
+}
+
+.text-large {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.3;
 }

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -396,6 +395,9 @@ body {
 
 .lg-screen {
   display: none; }
+  @media (min-width: 725px) {
+    .lg-screen {
+      display: block; } }
 
 .bg-primary {
   background: #048ca8;
@@ -436,12 +438,13 @@ h2 {
 .title-large {
   font-size: 3rem;
   font-weight: 900;
-  line-height: 0.9; }
+  line-height: 1;
+  text-align: center; }
 
 span {
   font-weight: 300; }
 
-.tittle-box {
+.title-box {
   background: #FF4980;
   color: white;
   margin: 0 auto;
@@ -449,12 +452,12 @@ span {
   transform: translateY(30%);
   max-width: 90%; }
   @media (min-width: 495px) {
-    .tittle-box {
+    .title-box {
       transform: translateY(50%); } }
-  .tittle-box + .bg-primary {
+  .title-box + .bg-primary {
     padding-top: 6em; }
     @media (min-width: 495px) {
-      .tittle-box + .bg-primary {
+      .title-box + .bg-primary {
         padding-top: 8em; } }
 
 .title-footer {
@@ -472,15 +475,35 @@ span {
 .text-intro {
   font-size: 1.2rem; }
 
+.text-large {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.3; }
+
 .grid {
   display: flex;
   flex-wrap: wrap; }
 
 .col {
-  flex: 0 0 100%; }
+  flex: 0 0 100%;
+  padding: 0.75em; }
+  @media (min-width: 725px) {
+    .col:first-of-type {
+      padding-left: 0; }
+    .col:last-of-type {
+      padding-right: 0; } }
 
 .col--full {
   flex: 0 0 100%; }
+
+@media (min-width: 725px) {
+  .col--1-3 {
+    flex-basis: 33.3333%; }
+
+  .col--2-3 {
+    flex-basis: 66.6666%; } }
+.col--1-2 {
+  flex-basis: 50%; }
 
 .main-header {
   position: absolute;
@@ -500,6 +523,16 @@ span {
   padding-bottom: 8em;
   padding-top: 8em;
   text-align: center; }
+  @media (min-width: 725px) {
+    .hero {
+      text-align: left;
+      padding-bottom: 0;
+      height: 90vmin;
+      min-height: 800px; } }
+
+@media (min-width: 725px) {
+  .hero-text {
+    margin-top: 5vmax; } }
 
 .main-nav {
   background: #048ca8;
@@ -572,6 +605,9 @@ span {
     margin-top: 1.5em; }
   .sales-point:last-child {
     margin-bottom: 0; }
+  @media (min-width: 725px) {
+    .sales-point:first-of-type {
+      margin-top: 0; } }
 
 .test .class {
   margin-bottom: 10px; }
@@ -604,7 +640,8 @@ footer {
   justify-content: space-around;
   opacity: 0.8;
   list-style-type: none;
-  margin: .7em 0; }
+  margin: .7em 0;
+  padding-left: 0; }
 
 .nav-footer {
   display: flex;
@@ -613,7 +650,8 @@ footer {
   margin: 0 auto; }
   .nav-footer a {
     text-decoration: none;
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 0 5px; }
 
 .btn {
   display: inline-block;
