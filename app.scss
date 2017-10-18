@@ -4,11 +4,11 @@
 @import "sass/mixin/mixin";
 //2. vendor
 @import "vendors/normalize";
+@import "sass/layout/grid";
 // 3. Base styles
 @import "sass/base/base";
 @import "sass/base/typography";
 // 4. layout
-@import "sass/layout/grid";
 @import "sass/layout/header";
 @import "sass/layout/hero";
 @import "sass/layout/nav";
