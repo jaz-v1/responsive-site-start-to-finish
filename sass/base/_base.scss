@@ -31,6 +31,8 @@ body {
   display: none;
   @media (min-width: 725px) {
     display: block;
+    min-height: 520px;
+    padding-top: 2vmin;
   }
 }
 

@@ -7,17 +7,34 @@
   font-size: 1.2rem;
   overflow: hidden;
   transition: (all, ease-out, 250ms);
+  @media(min-width: 725px) {
+    background: none;
+    position: relative;
+    flex: auto;
+    margin-top: 1em;
+    margin-left: 2em;
+    left: 0;
+  }
   ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
     height: 100vh;
-  }
-  li {
-    flex: (1 1 auto);
-    border-bottom: 1px solid rgba(0, 0, 0, .15);
-    display: flex;
+    @media(min-width: 725px) {
+      flex-direction: row;
+      height: auto;
+    }
+    li {
+      flex: (1 1 auto);
+      border-bottom: 1px solid rgba(0, 0, 0, .15);
+      display: flex;
+      @media(min-width: 725px) {
+        border: none;
+        display: inline-block;
+        text-align: right;
+      }
+    }
   }
   a {
     text-decoration: none;
@@ -26,8 +43,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media(min-width: 725px) {
+      display: inline;
+    }
     &:hover {
       background: rgba(0, 0, 0, .10);
+      @media(min-width: 725px) {
+        background: none;
+        color: darken($text-base, 15%);
+      }
     }
   }
   &.is-open {
@@ -43,6 +67,9 @@
   right: 1em;
   top: 1em;
   cursor: pointer;
+  @media(min-width: 725px) {
+    display: none;
+  }
 }
 
 .hamburger,
